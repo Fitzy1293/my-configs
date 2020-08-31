@@ -1,0 +1,3 @@
+'atom-workspace atom-text-editor:not([mini])':
+  'ctrl-shift-m': 'latex:build'
+  'ctrl-alt-m': 'latex:clean'

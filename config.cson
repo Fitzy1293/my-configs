@@ -1,0 +1,24 @@
+"*":
+  core:
+    telemetryConsent: "no"
+  editor:
+    fontSize: 10
+  "exception-reporting":
+    userId: "e04335c4-af44-4561-bd5c-f6218227af55"
+  latex:
+    engine: "lualatex"
+    openResultAfterBuild: false
+    opener: "custom"
+  "linter-python":
+    executablePath: "/home/fit/.local/bin/pylama"
+  "markdown-preview":
+    useGitHubStyle: true
+  minimap: {}
+  "platformio-ide-terminal":
+    core:
+      workingDirectory: "Active File"
+    style:
+      theme: "dracula"
+    toggles: {}
+  welcome:
+    showOnStartup: false

@@ -4,24 +4,20 @@ colorscheme delek
 :set laststatus=2
 :set splitright
 :set splitbelow
-:set statusline+=%F
-let var=expand('%:p') 
 "────────────────────────────────────────────────────────
-nnoremap s :w<CR><BS> 
-nnoremap S :wq<CR>
+nnoremap <Space> :w<CR><BS> 
 nnoremap t :source ~/.vimrc<CR>
+nnoremap b :q<CR>
 
-nnoremap <Enter> i<Home><CR><Esc>
+inoremap <C-i> <Esc>l
+nnoremap <Tab> i<Space><Space><Space><Space><Esc>l
+
+nnoremap <Enter> i<CR><Esc>
 nnoremap <Backspace> i<Home><BS><Esc>
-
 nnoremap c yy
 nnoremap x yydd
 
 nnoremap q :NERDTree<CR>
-nnoremap w :vert sb3<CR>
-nnoremap r :tabnext<CR><BS>
-nnoremap e :tabprevious<CR><BS>
-nnoremap F :bd<CR><BS>
 nnoremap n <Home>
 nnoremap m <End>
 "────────────────────────────────────────────────────────
@@ -35,7 +31,8 @@ Plugin 'preservim/nerdtree'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plugin 'lervag/vimtex'
-Plugin 'xuhdev/vim-latex-live-preview'
+Plugin 'junegunn/goyo.vim'
+
 call vundle#end()
 filetype plugin indent on  
 "────────────────────────────────────────────────────────
@@ -114,7 +111,7 @@ endfunction
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 "────────────────────────────────────────────────────────
-let g:livepreview_engine = 'pdflatex'
+let g:livepreview_engine = 'lualatex'
 let g:tex_flavor = 'latex'
 syntax on
 

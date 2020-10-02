@@ -132,5 +132,13 @@ fi
 #Can execute scripts in ~/bin/ with their filename as the terminal command.
 export PATH=$PATH:~/bin
 export PATH=$PATH:~/mybin
+export PATH=$PATH:~/.poetry/bin
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+
+
+#MY EDITS:
+#====================================================================
+PS1='\[\e]1;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[04;32;47m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$'
+

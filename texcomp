@@ -1,0 +1,13 @@
+#!/bin/bash
+
+if [ $1 == '-bib' ]
+then
+  lualatex -interaction nonstopmode $2 > /dev/null
+  bibtex $2
+  lualatex -interaction nonstopmode $2 > /dev/null
+
+else
+  lualatex -interaction nonstopmode $1 > /dev/null 
+fi
+
+rm *.out *.aux *.dvi

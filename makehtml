@@ -1,0 +1,4 @@
+#!/bin/bash
+pandoc -s README.md -o html_readme.html
+xdg-open html_readme.html
+

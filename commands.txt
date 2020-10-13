@@ -1,0 +1,4 @@
+#Formats README.md to github style html
+pandoc -s README.md -o html_readme.html -c=github.css
+#Transfer a file.
+scp -i ~/.ssh/my_ubuntu.pem html_readme.html ubuntu@ec2-34-195-193-170.compute-1.amazonaws.com:~/readme.html

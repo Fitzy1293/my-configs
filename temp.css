@@ -1,0 +1,38 @@
+body {
+  background-color: #08090f;
+  color: #ffffff;
+  margin-left: 0px;
+  margin-right: 0px;
+  font-family: Impact, Charcoal, sans-serif;
+}
+
+
+code {
+  white-space: pre-wrap;
+  color: #fc0317;
+}
+
+.line-content {
+    padding: 0px 5px !important;
+}
+td {
+    display: table-cell;
+    vertical-align: baseline;
+    padding: 0px !important;
+}
+
+table {
+    border-collapse: separate;
+    white-space: pre-wrap !important;
+    line-height: normal;
+    font-weight: normal;
+    font-size: initial;
+    font-style: normal;
+    color: -internal-quirk-inherit;
+    text-align: start;
+    word-break: break-word;
+    font-family: monospace;
+    tab-size: 4;
+    border-spacing: 0px;
+    font-variant: normal;
+}

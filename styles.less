@@ -1,24 +1,27 @@
-//This file sets how atom looks!
-//Currently using the dracula theme and syntax
+// This file sets how atom looks!
+// Currently using the dracula theme and syntax
 
-
-//Main background ccolor
+// Main background ccolor
 atom-text-editor {background-color: #282a36;}
 
-//Folder panel background color
+// Folder panel background color
 .tree-view {background-color: #282a36;}
 
-//Folder color
+// Folder color
  span.icon-file-directory {color: pink;}
 
-
-
-//Highlight color
+// Highlight color
 .editor .selection .region {background-color: black;}
 
-//Cursor
+// Cursor
 .editor .cursor {
-   position: absolute;
-   border: 1px solid;
-   background-color: green;
+    position: absolute;
+    border: 1px solid;
+    background-color: green;
+}
+// Stop blinking cursor
+atom-text-editor {
+  .cursors.blink-off .cursor {
+    opacity: 1;
+  }
 }

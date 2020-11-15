@@ -1,17 +1,3 @@
-# _               _              
-#| |__   __ _ ___| |__  _ __ ___ 
-#| '_ \ / _` / __| '_ \| '__/ __|
-#| |_) | (_| \__ \ | | | | | (__ 
-#|_.__/ \__,_|___/_| |_|_|  \___|
-
-
-
-
-
-# ~/.bashrc: executed by bash(1) for non-login shells.
-# see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
-# for examples
-
 # If not running interactively, don't do anything
 case $- in
     *i*) ;;
@@ -129,23 +115,35 @@ if ! shopt -oq posix; then
   fi
 fi
 
-#Can execute scripts in ~/bin/ with their filename as the terminal command.
-export PATH=$PATH:~/bin
-export PATH=$PATH:~/mybin
-export PATH=$PATH:~/.poetry/bin
+
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
 
-
-#MY EDITS:
+# MY EDITS:
 #====================================================================
-
-PS1="\[$(tput bold)\]\[$(tput setaf 1)\][\[$(tput setaf 3)\]\u\[$(tput setaf 2)\]@\[$(tput setaf 4)\]\h \[$(tput setaf 5)\]\W\[$(tput setaf 1)\]]\[$(tput setaf 7)\]\\$ \[$(tput sgr0)\]"
-
-
-
-
-
+# Can execute scripts in ~/bin/ with their filename as the terminal command.
+export PATH=$PATH:~/bin
+export PATH=$PATH:~/mybin
+export PATH=$PATH:~/.poetry/bin
+export PATH=$PATH:~/.local/share/dirsearch
 
 
+#0 – Black.
+#1 – Red.
+#2 – Green.
+#3 – Yellow.
+#4 – Blue.
+#5 – Magenta.
+#6 – Cyan.
+#7 – White.
+PS1="\[$(tput bold)\]\[$(tput setaf 3)\][ \[$(tput setaf 2)\]\u\[$(tput setaf 1)\]@\[$(tput setaf 4)\]\h\[$(tput setaf 3)\] ] \[$(tput setaf 5)\]\w\[$(tput setaf 6)\]\\n\$ \[$(tput sgr0)\]"
+
+
+
+
+
+
+
+
+export BROWSER="/usr/bin/chromium"

@@ -1,5 +1,10 @@
 alias python='/usr/bin/python3.8'
+alias py='/usr/bin/python3.8'
 alias pip='pip3'
 alias ipython='ipython3'
 alias o='xdg-open'
 alias trash="gio trash $1"
+alias lsblk="lsblk | grep -v 'loop'"
+alias cop="xclip -selection clipboard"
+alias mex="chmod +x"
+alias cls="clear && ls"

@@ -139,11 +139,4 @@ export PATH=$PATH:~/.local/share/dirsearch
 #7 – White.
 PS1="\[$(tput bold)\]\[$(tput setaf 3)\][ \[$(tput setaf 2)\]\u\[$(tput setaf 1)\]@\[$(tput setaf 4)\]\h\[$(tput setaf 3)\] ] \[$(tput setaf 5)\]\w\[$(tput setaf 6)\]\\n\$ \[$(tput sgr0)\]"
 
-
-
-
-
-
-
-
 export BROWSER="/usr/bin/chromium"
